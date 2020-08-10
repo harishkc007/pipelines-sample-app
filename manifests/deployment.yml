@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: harishkcpipelinessampleapp 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: harishkcpipelinessampleapp 
+    spec:
+      containers:
+        - name: harishkcpipelinessampleapp 
+          image: hariacr12w.azurecr.io/harishkcpipelinessampleapp
+          ports:
+          - containerPort: 8080
