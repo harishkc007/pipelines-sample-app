@@ -1,5 +1,4 @@
-apiVersion : extensions/v1beta1
-kind: Deployment
+apiVersion : app/v1
 metadata:
   name: harishkcpipelinessampleapp 
 spec:
